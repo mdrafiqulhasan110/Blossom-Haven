@@ -4,21 +4,25 @@
     box-sizing: border-box;
     font-family: lato;
 }
-
+.container{
+    margin: 100px 0;
+}
 .row {
     width: 75vw;
     margin: auto;
 }
 
 
-.banner-container {
+
+.banner {
     background: rgba(229, 84, 115, 0.10);
     height: 90vh;
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
-.banner-container>.row {
+.banner .row {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -40,7 +44,7 @@
 
 }
 
-.banner-subtitle , .featured p {
+ p {
     color: rgba(39, 39, 39, 0.60);
     line-height: 25px;
     margin-bottom: 35px;
@@ -68,14 +72,65 @@
     bottom: 0;
 }
 
-.featured {
-    padding: 100px 0;
-    text-align: center;
-}
 
-.featured h2{
+.deal h2 ,.deal p{
+text-align: center;
 margin-bottom: 15px;
 }
+
+.deal .product{
+height: 75vh;
+background-color:rgba(218, 240, 241, .30) ;
+display: flex;
+border-radius: 10px;
+border: 2px solid transparent;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.deal img{
+    width: auto;
+    height: 100%;
+    border-radius: 10px 0 0 10px;}
+
+.deal .dealdesc{
+    padding: 25px;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+#timer {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+}
+#timer div{
+    border:1px solid gray ;
+    padding: 10px 20px;
+    background-color: black;
+    color:#fff;
+
+
+}
+
+
+
+
+
+
+.featured{
+    text-align: center;
+
+}
+
+.featured h2 {
+    margin-bottom: 15px;
+}
+
 .flowers {
     display: flex;
     justify-content: space-between;
@@ -86,9 +141,10 @@ margin-bottom: 15px;
     width: 30%;
 }
 
-.card h3{
+.card h3 {
     text-decoration: underline;
 }
+
 .img-box {
     height: 400px;
     width: 100%;
@@ -121,4 +177,23 @@ margin-bottom: 15px;
 
 #flower3 {
     background: rgba(71, 125, 17, 0.15);
+}
+
+.service{
+    text-align: center;
+
+}
+.service .row {
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 75px 0;
+}
+
+.services p {
+    margin-top: 15px;
+    color: rgba(39, 39, 39, 0.80);
+    font-weight: 600;
 }
